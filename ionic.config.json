@@ -1,0 +1,7 @@
+{
+  "name": "enchereApk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
