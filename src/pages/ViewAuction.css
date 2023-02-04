@@ -1,0 +1,40 @@
+#view-message-page ion-item {
+  --inner-padding-end: 0;
+  --background: transparent;
+}
+
+#view-auction-page ion-label {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#view-auction-page ion-item h2 {
+  font-weight: 600;
+}
+
+#view-auction-page ion-item .date {
+  float: right;
+  align-items: center;
+  display: flex;
+}
+
+#view-auction-page ion-item ion-icon {
+  font-size: 42px;
+  margin-right: 8px;
+}
+
+#view-auction-page ion-item ion-note {
+  font-size: 15px;
+  margin-right: 12px;
+  font-weight: normal;
+}
+
+#view-auction-page h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#view-auction-page p {
+  line-height: 22px;
+}

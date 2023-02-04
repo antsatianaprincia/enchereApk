@@ -21,6 +21,11 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Login from './pages/Login';
+import AjoutEnchere from './pages/AjoutEnchere';
+import Photo from './pages/photo';
+import ViewAuction from './pages/ViewAuction';
+import Rencherir from './pages/Rencherir';
 
 setupIonicReact();
 
@@ -28,12 +33,14 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <Route exact path=""><Redirect from='/' to='/login' /></Route>
+
+        <Route path="/login" component={Login}></Route>
+        <Route path="/ajout" component={AjoutEnchere}></Route>
+        <Route path="/photo" component={Photo}></Route>
+        <Route path="/home" component={Home}></Route>
+        <Route path="/auction/:id" component={ViewAuction}></Route>
+        <Route path="/rencherir" component={Rencherir}></Route>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
